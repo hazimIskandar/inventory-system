@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @raw_material.name %>
+</p>
+
+<p>
+  <strong>Kuantiti:</strong>
+  <%= @raw_material.quantity %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @raw_material.unit %>
+</p>
+
+<p>
+  <strong>Harga seunit:</strong>
+  <%= @raw_material.per_unit_price %>
+</p>
+
+<p>
+  <strong>Pembekal:</strong>
+  <%= @raw_material.supplier %>
+</p>
+
+<p>
+  <strong>Perniagaan:</strong>
+  <%= @raw_material.perniagaan %>
+</p>
+
+<%= link_to 'Edit', edit_raw_material_path(@raw_material) %> |
+<%= link_to 'Back', raw_materials_path %>

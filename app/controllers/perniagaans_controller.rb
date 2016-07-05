@@ -5,6 +5,7 @@ class PerniagaansController < ApplicationController
 	end
 	
 	def show
+		@raw_materials = RawMaterial.all
 		@perniagaan = Perniagaan.find(params[:id])
 	end
 	
